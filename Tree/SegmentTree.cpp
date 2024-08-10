@@ -74,6 +74,7 @@ void updateValueOnArray(int id, int l, int r, int pos, int val){
 }
 
 int main(){
+    // update n lần (nlogn) tương đương build(4n)
     buildNode(1, 0, n-1);
     cout << getSum(1, 0, n-1, 1, 4) << endl;
     updateValueOnArray(1, 0, n-1, 3, 10);
